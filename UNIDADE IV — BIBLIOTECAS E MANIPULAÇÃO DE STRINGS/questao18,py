@@ -1,0 +1,22 @@
+import random
+
+dado1 = random.randint(1, 6)
+dado2 = random.randint(1, 6)
+
+print("Lançamento único:")
+print(f"Primeiro dado: {dado1}")
+print(f"Segundo dado: {dado2}")
+print(f"Soma: {dado1 + dado2}")
+
+quantidade_7 = 0
+
+for i in range(10):
+    dado1 = random.randint(1, 6)
+    dado2 = random.randint(1, 6)
+
+    soma = dado1 + dado2
+
+    if soma == 7:
+        quantidade_7 += 1
+
+print(f"\nQuantidade de vezes que a soma foi 7: {quantidade_7}")
